@@ -9,13 +9,13 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Experience
   - Developer Portal
-  - Internal Developer Portal
-  - Service Catalog
-  - Platform Engineering
   - DevOps
+  - Experience
+  - Internal Developer Portal
   - Microservices
+  - Platform Engineering
+  - Service Catalog
   - Service Maturity
 created: '2026-03-03'
 modified: '2026-03-16'
@@ -34,10 +34,10 @@ apis:
     humanURL: https://docs.opslevel.com/docs/graphql
     baseURL: https://api.opslevel.com
     tags:
-      - GraphQL
       - Developer Portal
-      - Service Catalog
+      - GraphQL
       - Platform Engineering
+      - Service Catalog
     properties:
       - type: Documentation
         url: https://docs.opslevel.com/docs/graphql
