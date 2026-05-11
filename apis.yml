@@ -80,6 +80,78 @@ common:
     url: https://www.opslevel.com/integrations-overview
   - type: Customers
     url: https://www.opslevel.com/customers
+integrations:
+  - name: OpsLevel
+  - name: 'Demo: Infrastructure Checks in Seconds'
+  - name: Hudl
+  - name: Keller Williams
+  - name: Hootsuite
+  - name: Amazon ECR
+  - name: Aqua Security
+  - name: ArgoCD
+  - name: Auth0
+  - name: AWS
+  - name: AWS CodeBuild
+  - name: Azure DevOps Git
+  - name: Azure Infrastructure
+  - name: Bitbucket
+  - name: Bugsnag
+  - name: CircleCI
+  - name: Codacy
+  - name: Code Climate
+  - name: CodeCov
+  - name: Concourse
+  - name: Coveralls
+  - name: Custom Deploy
+  - name: Custom Event
+  - name: Datadog
+  - name: Dependabot
+  - name: Dynatrace
+  - name: FireHydrant
+  - name: GitHub
+  - name: GitHub Actions
+  - name: GitHub Advanced Security
+  - name: GitLab
+  - name: Gitlab CI/CD
+  - name: GoCD
+  - name: Google Cloud Platform (GCP)
+  - name: Google G-Suite SSO
+  - name: Grafana
+  - name: Grype
+  - name: Harness
+  - name: Incident.io
+  - name: Jenkins
+  - name: JFrog Xray
+  - name: Jira
+  - name: Kubernetes
+  - name: Lacework
+  - name: Microsoft Entra ID (Azure Active Directory)
+  - name: New Relic
+  - name: Octopus Deploy
+  - name: Okta
+  - name: OneLogin
+  - name: Opsgenie
+  - name: OpsLevel CLI
+  - name: PagerDuty
+  - name: Ping Identity
+  - name: Prisma Cloud (Palo Alto Networks)
+  - name: Prometheus Alert Manager
+  - name: Rollbar
+  - name: Rootly
+  - name: SCIM
+  - name: Sentry
+  - name: ServiceNow
+  - name: Slack
+  - name: Snyk
+  - name: SonarQube
+  - name: Sonatype
+  - name: StackHawk
+  - name: Sumo Logic
+  - name: Terraform
+  - name: Veracode
+  - name: OpsLevel Dashboard
+  - name: SOC 2
+  - name: AICPA SOC
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
