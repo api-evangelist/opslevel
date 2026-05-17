@@ -43,7 +43,7 @@ apis:
         url: https://docs.opslevel.com/docs/graphql
       - type: Authentication
         url: https://docs.opslevel.com/docs/graphql
-      - type: Getting Started
+      - type: GettingStarted
         url: https://docs.opslevel.com/docs/getting-started-with-service-creation
 common:
   - type: Portal
@@ -52,7 +52,7 @@ common:
     url: https://docs.opslevel.com/
   - type: Blog
     url: https://www.opslevel.com/resource/blog
-  - type: Sign Up
+  - type: SignUp
     url: https://www.opslevel.com/request-a-demo
   - type: Login
     url: https://app.opslevel.com/users/sign_in
@@ -60,17 +60,17 @@ common:
     url: https://www.opslevel.com/pricing
   - type: About
     url: https://www.opslevel.com/about
-  - type: Status Page
+  - type: StatusPage
     url: https://opslevelstatus.com/
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.opslevel.com/legal/t4-terms-of-service
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.opslevel.com/legal/privacy
   - type: Security
     url: https://www.opslevel.com/legal/security
   - type: Contact
     url: https://www.opslevel.com/contact
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/OpsLevel
   - type: LinkedIn
     url: https://www.linkedin.com/company/opslevel
