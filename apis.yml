@@ -18,7 +18,7 @@ tags:
   - Service Catalog
   - Service Maturity
 created: '2026-03-03'
-modified: '2026-03-16'
+modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/opslevel/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
@@ -80,6 +80,9 @@ common:
     url: https://www.opslevel.com/integrations-overview
   - type: Customers
     url: https://www.opslevel.com/customers
+  - name: MCP Server
+    url: https://github.com/OpsLevel/opslevel-mcp
+    type: MCPServer
 integrations:
   - name: OpsLevel
   - name: 'Demo: Infrastructure Checks in Seconds'
