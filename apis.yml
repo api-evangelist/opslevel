@@ -83,6 +83,8 @@ common:
   - name: MCP Server
     url: https://github.com/OpsLevel/opslevel-mcp
     type: MCPServer
+  - type: LLMsTxt
+    url: https://docs.opslevel.com/llms.txt
 integrations:
   - name: OpsLevel
   - name: 'Demo: Infrastructure Checks in Seconds'
