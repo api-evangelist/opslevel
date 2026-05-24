@@ -1,0 +1,126 @@
+openapi: 3.1.0
+info:
+  title: OpsLevel GraphQL API
+  description: |
+    OpsLevel is a prescriptive internal developer portal for cataloging,
+    measuring, and scaffolding services. OpsLevel exposes a single GraphQL
+    endpoint at `/graphql` that accepts POST requests carrying a GraphQL
+    query or mutation. Authentication uses a Bearer API token in the
+    `Authorization` header.
+  version: "1.0.0"
+  contact:
+    name: OpsLevel
+    url: https://www.opslevel.com
+servers:
+  - url: https://api.opslevel.com
+    description: OpsLevel production API
+security:
+  - bearerAuth: []
+tags:
+  - name: GraphQL
+    description: OpsLevel GraphQL endpoint.
+paths:
+  /graphql:
+    post:
+      tags: [GraphQL]
+      summary: Execute a GraphQL query or mutation
+      description: |
+        Single endpoint that accepts any OpsLevel GraphQL query or mutation.
+        Examples: list services, list teams, run checks, update service
+        properties.
+      operationId: executeGraphQL
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GraphQLRequest'
+            examples:
+              accountServices:
+                summary: List services in the account
+                value:
+                  query: |
+                    query Services {
+                      account {
+                        services {
+                          nodes { id name owner { name } }
+                          pageInfo { endCursor hasNextPage }
+                        }
+                      }
+                    }
+              accountTeams:
+                summary: List teams in the account
+                value:
+                  query: |
+                    query Teams {
+                      account {
+                        teams {
+                          nodes { id name alias }
+                        }
+                      }
+                    }
+      responses:
+        "200":
+          description: GraphQL response payload (may contain errors alongside data).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GraphQLResponse'
+        "401":
+          description: Missing or invalid bearer token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GraphQLResponse'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: Token
+      description: |
+        OpsLevel API token created in the OpsLevel app. Supply as
+        `Authorization: Bearer ${TOKEN}`.
+  schemas:
+    GraphQLRequest:
+      type: object
+      required: [query]
+      properties:
+        query:
+          type: string
+          description: GraphQL query or mutation document.
+        variables:
+          type: object
+          description: Variables for the GraphQL document.
+          additionalProperties: true
+        operationName:
+          type: string
+          description: Operation name when the document contains multiple operations.
+    GraphQLResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          additionalProperties: true
+          nullable: true
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/GraphQLError'
+    GraphQLError:
+      type: object
+      properties:
+        message:
+          type: string
+        path:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: integer
+        extensions:
+          type: object
+          additionalProperties: true
+externalDocs:
+  description: OpsLevel GraphQL Documentation
+  url: https://docs.opslevel.com/docs/graphql
