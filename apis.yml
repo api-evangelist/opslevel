@@ -1,7 +1,7 @@
 aid: opslevel
 name: OpsLevel
 segments:
-  - Experience
+- Experience
 description: >-
   OpsLevel is a prescriptive internal developer portal for cataloging, measuring, and scaffolding services according to engineering best practices.
 type: Index
@@ -9,154 +9,156 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Developer Portal
-  - DevOps
-  - Experience
-  - Internal Developer Portal
-  - Microservices
-  - Platform Engineering
-  - Service Catalog
-  - Service Maturity
+- Developer Portal
+- DevOps
+- Experience
+- Internal Developer Portal
+- Microservices
+- Platform Engineering
+- Service Catalog
+- Service Maturity
 created: '2026-03-03'
 modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/opslevel/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: opslevel:graphql-api
-    name: OpsLevel GraphQL API
-    description: >-
-      The OpsLevel GraphQL API allows you to integrate OpsLevel with your other
-      operational tools, enrich internal tickets, incidents, and other systems
-      with service and team data pulled from OpsLevel. The API supports queries
-      for data retrieval and mutations for data modification, with cursor-based
-      pagination, bearer token authentication, and a rich data model covering
-      services, teams, users, deployments, and infrastructure.
-    humanURL: https://docs.opslevel.com/docs/graphql
-    baseURL: https://api.opslevel.com
-    tags:
-      - Developer Portal
-      - GraphQL
-      - Platform Engineering
-      - Service Catalog
-    properties:
-      - type: Documentation
-        url: https://docs.opslevel.com/docs/graphql
-      - type: Authentication
-        url: https://docs.opslevel.com/docs/graphql
-      - type: GettingStarted
-        url: https://docs.opslevel.com/docs/getting-started-with-service-creation
+- aid: opslevel:graphql-api
+  name: OpsLevel GraphQL API
+  description: >-
+    The OpsLevel GraphQL API allows you to integrate OpsLevel with your other
+    operational tools, enrich internal tickets, incidents, and other systems
+    with service and team data pulled from OpsLevel. The API supports queries
+    for data retrieval and mutations for data modification, with cursor-based
+    pagination, bearer token authentication, and a rich data model covering
+    services, teams, users, deployments, and infrastructure.
+  humanURL: https://docs.opslevel.com/docs/graphql
+  baseURL: https://api.opslevel.com
+  tags:
+  - Developer Portal
+  - GraphQL
+  - Platform Engineering
+  - Service Catalog
+  properties:
+  - type: Documentation
+    url: https://docs.opslevel.com/docs/graphql
+  - type: Authentication
+    url: https://docs.opslevel.com/docs/graphql
+  - type: GettingStarted
+    url: https://docs.opslevel.com/docs/getting-started-with-service-creation
+  - url: graphql/opslevel-graphql.md
+    type: GraphQL
 common:
-  - type: Portal
-    url: https://www.opslevel.com/
-  - type: Developer Documentation
-    url: https://docs.opslevel.com/
-  - type: Blog
-    url: https://www.opslevel.com/resource/blog
-  - type: SignUp
-    url: https://www.opslevel.com/request-a-demo
-  - type: Login
-    url: https://app.opslevel.com/users/sign_in
-  - type: Pricing
-    url: https://www.opslevel.com/pricing
-  - type: About
-    url: https://www.opslevel.com/about
-  - type: StatusPage
-    url: https://opslevelstatus.com/
-  - type: TermsOfService
-    url: https://www.opslevel.com/legal/t4-terms-of-service
-  - type: PrivacyPolicy
-    url: https://www.opslevel.com/legal/privacy
-  - type: Security
-    url: https://www.opslevel.com/legal/security
-  - type: Contact
-    url: https://www.opslevel.com/contact
-  - type: GitHubOrganization
-    url: https://github.com/OpsLevel
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/opslevel
-  - type: Terraform Provider
-    url: https://registry.terraform.io/providers/OpsLevel/opslevel/latest/docs
-  - type: Integrations
-    url: https://www.opslevel.com/integrations-overview
-  - type: Customers
-    url: https://www.opslevel.com/customers
-  - name: MCP Server
-    url: https://github.com/OpsLevel/opslevel-mcp
-    type: MCPServer
-  - type: LLMsTxt
-    url: https://docs.opslevel.com/llms.txt
+- type: Portal
+  url: https://www.opslevel.com/
+- type: Developer Documentation
+  url: https://docs.opslevel.com/
+- type: Blog
+  url: https://www.opslevel.com/resource/blog
+- type: SignUp
+  url: https://www.opslevel.com/request-a-demo
+- type: Login
+  url: https://app.opslevel.com/users/sign_in
+- type: Pricing
+  url: https://www.opslevel.com/pricing
+- type: About
+  url: https://www.opslevel.com/about
+- type: StatusPage
+  url: https://opslevelstatus.com/
+- type: TermsOfService
+  url: https://www.opslevel.com/legal/t4-terms-of-service
+- type: PrivacyPolicy
+  url: https://www.opslevel.com/legal/privacy
+- type: Security
+  url: https://www.opslevel.com/legal/security
+- type: Contact
+  url: https://www.opslevel.com/contact
+- type: GitHubOrganization
+  url: https://github.com/OpsLevel
+- type: LinkedIn
+  url: https://www.linkedin.com/company/opslevel
+- type: Terraform Provider
+  url: https://registry.terraform.io/providers/OpsLevel/opslevel/latest/docs
+- type: Integrations
+  url: https://www.opslevel.com/integrations-overview
+- type: Customers
+  url: https://www.opslevel.com/customers
+- name: MCP Server
+  url: https://github.com/OpsLevel/opslevel-mcp
+  type: MCPServer
+- type: LLMsTxt
+  url: https://docs.opslevel.com/llms.txt
 integrations:
-  - name: OpsLevel
-  - name: 'Demo: Infrastructure Checks in Seconds'
-  - name: Hudl
-  - name: Keller Williams
-  - name: Hootsuite
-  - name: Amazon ECR
-  - name: Aqua Security
-  - name: ArgoCD
-  - name: Auth0
-  - name: AWS
-  - name: AWS CodeBuild
-  - name: Azure DevOps Git
-  - name: Azure Infrastructure
-  - name: Bitbucket
-  - name: Bugsnag
-  - name: CircleCI
-  - name: Codacy
-  - name: Code Climate
-  - name: CodeCov
-  - name: Concourse
-  - name: Coveralls
-  - name: Custom Deploy
-  - name: Custom Event
-  - name: Datadog
-  - name: Dependabot
-  - name: Dynatrace
-  - name: FireHydrant
-  - name: GitHub
-  - name: GitHub Actions
-  - name: GitHub Advanced Security
-  - name: GitLab
-  - name: Gitlab CI/CD
-  - name: GoCD
-  - name: Google Cloud Platform (GCP)
-  - name: Google G-Suite SSO
-  - name: Grafana
-  - name: Grype
-  - name: Harness
-  - name: Incident.io
-  - name: Jenkins
-  - name: JFrog Xray
-  - name: Jira
-  - name: Kubernetes
-  - name: Lacework
-  - name: Microsoft Entra ID (Azure Active Directory)
-  - name: New Relic
-  - name: Octopus Deploy
-  - name: Okta
-  - name: OneLogin
-  - name: Opsgenie
-  - name: OpsLevel CLI
-  - name: PagerDuty
-  - name: Ping Identity
-  - name: Prisma Cloud (Palo Alto Networks)
-  - name: Prometheus Alert Manager
-  - name: Rollbar
-  - name: Rootly
-  - name: SCIM
-  - name: Sentry
-  - name: ServiceNow
-  - name: Slack
-  - name: Snyk
-  - name: SonarQube
-  - name: Sonatype
-  - name: StackHawk
-  - name: Sumo Logic
-  - name: Terraform
-  - name: Veracode
-  - name: OpsLevel Dashboard
-  - name: SOC 2
-  - name: AICPA SOC
+- name: OpsLevel
+- name: 'Demo: Infrastructure Checks in Seconds'
+- name: Hudl
+- name: Keller Williams
+- name: Hootsuite
+- name: Amazon ECR
+- name: Aqua Security
+- name: ArgoCD
+- name: Auth0
+- name: AWS
+- name: AWS CodeBuild
+- name: Azure DevOps Git
+- name: Azure Infrastructure
+- name: Bitbucket
+- name: Bugsnag
+- name: CircleCI
+- name: Codacy
+- name: Code Climate
+- name: CodeCov
+- name: Concourse
+- name: Coveralls
+- name: Custom Deploy
+- name: Custom Event
+- name: Datadog
+- name: Dependabot
+- name: Dynatrace
+- name: FireHydrant
+- name: GitHub
+- name: GitHub Actions
+- name: GitHub Advanced Security
+- name: GitLab
+- name: Gitlab CI/CD
+- name: GoCD
+- name: Google Cloud Platform (GCP)
+- name: Google G-Suite SSO
+- name: Grafana
+- name: Grype
+- name: Harness
+- name: Incident.io
+- name: Jenkins
+- name: JFrog Xray
+- name: Jira
+- name: Kubernetes
+- name: Lacework
+- name: Microsoft Entra ID (Azure Active Directory)
+- name: New Relic
+- name: Octopus Deploy
+- name: Okta
+- name: OneLogin
+- name: Opsgenie
+- name: OpsLevel CLI
+- name: PagerDuty
+- name: Ping Identity
+- name: Prisma Cloud (Palo Alto Networks)
+- name: Prometheus Alert Manager
+- name: Rollbar
+- name: Rootly
+- name: SCIM
+- name: Sentry
+- name: ServiceNow
+- name: Slack
+- name: Snyk
+- name: SonarQube
+- name: Sonatype
+- name: StackHawk
+- name: Sumo Logic
+- name: Terraform
+- name: Veracode
+- name: OpsLevel Dashboard
+- name: SOC 2
+- name: AICPA SOC
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
