@@ -50,11 +50,11 @@ apis:
 common:
 - type: Portal
   url: https://www.opslevel.com/
-- type: Developer Documentation
+- type: Documentation
   url: https://docs.opslevel.com/
 - type: Blog
   url: https://www.opslevel.com/resource/blog
-- type: SignUp
+- type: Signup
   url: https://www.opslevel.com/request-a-demo
 - type: Login
   url: https://app.opslevel.com/users/sign_in
@@ -85,7 +85,7 @@ common:
 - name: MCP Server
   url: https://github.com/OpsLevel/opslevel-mcp
   type: MCPServer
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.opslevel.com/llms.txt
 integrations:
 - name: OpsLevel
