@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/opslevel-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  bearerFormat: Token
+  description: |-
+    OpsLevel API token created in the OpsLevel app. Supply as
+    `Authorization: Bearer ${TOKEN}`.
+  sources:
+  - openapi/opslevel-openapi.yml

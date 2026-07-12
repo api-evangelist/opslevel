@@ -48,6 +48,12 @@ apis:
   - url: graphql/opslevel-graphql.md
     type: GraphQL
 common:
+- type: VulnerabilityDisclosure
+  url: security/opslevel-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/opslevel-domain-security.yml
+- type: Authentication
+  url: authentication/opslevel-authentication.yml
 - type: Portal
   url: https://www.opslevel.com/
 - type: Documentation
