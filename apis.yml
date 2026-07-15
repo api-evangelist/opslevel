@@ -48,6 +48,8 @@ apis:
   - url: graphql/opslevel-graphql.md
     type: GraphQL
 common:
+- type: AgenticAccess
+  url: agentic-access/opslevel-agentic-access.yml
 - type: VulnerabilityDisclosure
   url: security/opslevel-vulnerability-disclosure.yml
 - type: DomainSecurity
