@@ -1,0 +1,14 @@
+{
+  "provider": "opslevel",
+  "sources": [
+    "opslevel-graphql-api-openapi.yml"
+  ],
+  "outputs": [
+    "opslevel-graphql-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
