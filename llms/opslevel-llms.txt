@@ -1,0 +1,118 @@
+# OpsLevel Documentation
+
+> Documentation for the OpsLevel internal developer portal. How-to guides to help you create a software and service catalog, implement production readiness, and improve your software maturity posture.
+
+## Guides
+- [Introducing OpsLevel](https://docs.opslevel.com/docs/introducing-opslevel.md): The Fast-Track to Engineering Visibility, Standards, and Self-Service.
+- [Config as Code (opslevel.yml)](https://docs.opslevel.com/docs/opslevel-yml.md): You can define OpsLevel components and ownership info by placing an opslevel.yml file in your git repos. OpsLevel will automatically synchronize these files whenever they change.
+- [CLI](https://docs.opslevel.com/docs/cli.md): Interact with the OpsLevel API via our CLI to perform CRUD actions on components, teams, or checks and even submit deploy events.
+- [GraphQL API](https://docs.opslevel.com/docs/graphql.md): Learn about our GraphQL API and how to query and mutate OpsLevel data. You can also use the GraphiQL Explorer to interact with the API on your own OpsLevel account.
+- [Terraform](https://docs.opslevel.com/docs/terraform.md): You can define OpsLevel services and checks with Hashicorp's Terraform tool.
+- [Package Version Inventories](https://docs.opslevel.com/docs/package-versions.md): Automatically collect package versions for your repositories, or upload SBOM files for your repositories and services.
+- [MCP Server](https://docs.opslevel.com/docs/mcp.md): The MCP server puts the data your catalog already has in the assistant you already work in.
+- [Teams](https://docs.opslevel.com/docs/teams.md): Simplify service ownership by defining teams in OpsLevel.
+- [Components](https://docs.opslevel.com/docs/components.md): Track any object in OpsLevel's Software Catalog with Components.
+- [Relationships](https://docs.opslevel.com/docs/relationship-definitions.md): Build a richer and more comprehensive Catalog with custom component relationships.
+- [Infrastructure Components](https://docs.opslevel.com/docs/infrastructure-components.md): Create, manage, and customize your Infrastructure Catalog the same way as Components.
+- [Repositories](https://docs.opslevel.com/docs/repositories.md): OpsLevel can track ownership of all your git repos, not just software components. Libraries, internal tools, templates, Terraform, and more.
+- [Connecting Repositories to Software Components (prev. Services)](https://docs.opslevel.com/docs/service-connections.md): You can map where all of a component's code and configuration reside by associating repositories to it. OpsLevel supports sophisticated relationships such as monorepos.
+- [Infrastructure](https://docs.opslevel.com/docs/infrastructure.md): Import Infrastructure Objects from your IaaS account(s)
+- [Import Infrastructure Objects via AWS](https://docs.opslevel.com/docs/import-infrastructure-objects-via-aws.md): Import Infrastructure Objects from your AWS account(s)
+- [Import Infrastructure Objects via Azure](https://docs.opslevel.com/docs/import-infrastructure-objects-via-azure.md): Import Infrastructure Objects from your Azure account(s)
+- [Import Infrastructure Objects via Google Cloud](https://docs.opslevel.com/docs/import-infrastructure-objects-via-google.md): Import Infrastructure Objects from your IaaS account(s)
+- [Systems](https://docs.opslevel.com/docs/systems.md): Systems provide a way to represent Components that combine to form a unified whole or function. For example, an online retailer may have a “Checkout” System that comprises several Components working in unison. Systems are composed of Components. Utilizing Systems allows you to group together all of the Components that combine into a single unit so you can quickly see how these Components are performing.
+- [Domains](https://docs.opslevel.com/docs/domains.md): Domains provide a way to represent large business units or verticals within OpsLevel. Domains are comprised of child Systems which contain Components. Utilizing Domains allows you to understand the overall footprint of your business verticals (how many systems, services, users) as well as report on how the Teams and Groups that fall under that Domain are performing via features like the Maturity Report.
+- [Component Dependencies](https://docs.opslevel.com/docs/service-dependencies.md): Define and manage components relationships with Component Dependencies.
+- [Custom Properties](https://docs.opslevel.com/docs/custom-properties.md): Customize OpsLevel with the service properties that matter the most to your team.
+- [Property Definitions](https://docs.opslevel.com/docs/property-definitions.md): Configure your custom component properties in the UI.
+- [Property Schema](https://docs.opslevel.com/docs/property-schema.md): Define a JSON schema for your custom component properties.
+- [Assigning Component Properties](https://docs.opslevel.com/docs/assigning-service-properties.md): Populate Custom Properties for your components in OpsLevel.
+- [Advanced Usage and Reference](https://docs.opslevel.com/docs/advanced-usage-and-reference.md): Create Filters and Checks based on custom properties.
+- [SSO with Auth0](https://docs.opslevel.com/docs/auth0.md): Configure Auth0 as a SAML identity provider.
+- [SSO with Google G Suite](https://docs.opslevel.com/docs/google.md): Configure Google G Suite as a SAML identity provider.
+- [SSO with Microsoft Entra ID (Azure Active Directory)](https://docs.opslevel.com/docs/microsoft-entra-id-sso.md): Streamline user's access to OpsLevel using Single Sign-On with Microsoft Entra ID (previously Azure Active Directory).
+- [SSO with Okta](https://docs.opslevel.com/docs/okta.md): Configure Okta as a SAML identity provider.
+- [SSO with OneLogin](https://docs.opslevel.com/docs/sso-with-onelogin.md): Configure OneLogin as a SAML identity provider.
+- [SSO with other SAML Providers](https://docs.opslevel.com/docs/saml.md): Generic guide for configuring SAML Providers.
+- [Inviting Users](https://docs.opslevel.com/docs/inviting-users.md)
+- [Okta User Provisioning with SCIM](https://docs.opslevel.com/docs/okta-user-provisioning-with-scim.md): Provision users automatically from Okta to quickly build your catalog and keep your users fresh.
+- [User Provisioning with SCIM](https://docs.opslevel.com/docs/user-provisioning-with-scim.md): Provision users automatically from your identity provider to quickly build your catalog and keep your users fresh.
+- [Microsoft Entra ID (Previously Azure Active Directory) User Provisioning with SCIM](https://docs.opslevel.com/docs/entra-id-user-provisioning-with-scim.md): Provision users automatically from Microsoft Entra ID (Previously Azure Active Directory) to quickly build your catalog and keep your users up to date.
+- [GitHub Teams Integration](https://docs.opslevel.com/docs/github-teams-sync.md): Provision Users, Teams, and Team Hierarchy from GitHub into OpsLevel.
+- [OneLogin User Provisioning with SCIM](https://docs.opslevel.com/docs/onelogin-user-provisioning-with-scim.md): Provision users automatically from OneLogin to quickly build your catalog and keep your users fresh.
+- [User Roles](https://docs.opslevel.com/docs/roles.md): Learn about the different roles within OpsLevel, including basic role-based access control (RBAC) for creating and editing Service Maturity checks and campaigns.
+- [Custom Roles](https://docs.opslevel.com/docs/custom-roles.md): Learn about the creating custom roles within OpsLevel to match your organization RBAC model
+- [Getting Started with Rubrics](https://docs.opslevel.com/docs/getting-started-with-rubrics.md): Learn about how Rubrics can be used to evaluate the maturity of your components and get started by creating your first check.
+- [Scorecards](https://docs.opslevel.com/docs/scorecards.md): Learn about how Scorecards can be used to let the teams within your organization define their own standards.
+- [Checks and Filters](https://docs.opslevel.com/docs/checks-and-filters.md): Configure your Scorecard and Rubric with Checks and apply them to relevant services using filters.
+- [Categories and Levels](https://docs.opslevel.com/docs/categories-and-levels.md): Configure your rubric with categories and levels to organize your checks and quantify your definition of service maturity.
+- [Getting Started with Service Creation](https://docs.opslevel.com/docs/getting-started-with-service-creation.md): Learn about how Service Creation can be used to accelerate your developer teams in spinning up new services, while enforcing best practices that are baked-in into every new service.
+- [Detailed Guide to Service Creation](https://docs.opslevel.com/docs/detailed-guide-to-service-creation.md): Detailed documentation about OpsLevel's Service Creation feature
+- [What is Maintenance Agent](https://docs.opslevel.com/docs/what-is-maintenance-agent.md)
+- [How it works](https://docs.opslevel.com/docs/how-it-works.md): Maintenance Agent uses AI to read your code, understand context, and generate appropriate changes across multiple repositories.
+- [Initiatives](https://docs.opslevel.com/docs/initiatives.md)
+- [Creating Initiatives](https://docs.opslevel.com/docs/creating-initiatives.md): Learn how to create effective initiatives that generate high-quality code changes.
+- [Getting Started with Campaigns](https://docs.opslevel.com/docs/getting-started-with-campaigns.md): Learn about how Campaigns can be used to drive changes across your organization and get started by creating your first campaign.
+- [Lifecycle of a Campaign](https://docs.opslevel.com/docs/lifecycle-of-a-campaign.md): Learn about all the stages of a campaign and what you are able to do at every stage.
+- [Campaign Reminders](https://docs.opslevel.com/docs/campaign-reminders.md): Learn how Campaign reminders can be used to help drive adoption of your initiatives.
+- [Getting Started with Checks](https://docs.opslevel.com/docs/getting-started-with-checks.md): Learn how checks can be used to evaluate and score your software components.
+- [Branch Protection Checks](https://docs.opslevel.com/docs/branch-protection-checks.md): Verify that your default branch has protection rules defined.
+- [Custom Event Checks](https://docs.opslevel.com/docs/custom-event-checks.md): Send arbitrary JSON payloads to OpsLevel to evaluate the maturity of your services. Using jq, you can parse out service identifiers from your payload and determine whether the check, scoped to each found service, passes or fails. You can also customize check result messages using Liquid templates.
+- [Has API Docs Checks](https://docs.opslevel.com/docs/has-api-docs-checks.md): Verify that a service has API Docs.
+- [Relationship Checks](https://docs.opslevel.com/docs/relationship-checks.md): Automatically verify that relationship criteria are set for your components.
+- [Repo Grep Checks](https://docs.opslevel.com/docs/repo-grep-checks.md): Verify the existence or contents of files or folders in your repo.
+- [Repo File Checks](https://docs.opslevel.com/docs/repo-file-checks.md): Verify that the contents of a file in a service's repo satisfy some criteria, such as containing a certain string or JSON path.
+- [Tag Defined Checks](https://docs.opslevel.com/docs/tag-defined-checks.md): Verify that any of a service's tags satisfy some criteria, such as containing a certain value or matching a certain semver expression.
+- [Package Version Checks](https://docs.opslevel.com/docs/package-version-checks.md): Verify that services use (or do not use) certain software packages, and check for specific package versions.
+- [API Docs](https://docs.opslevel.com/docs/api-docs.md): Boost developer productivity by centralizing API Docs for all your services within OpsLevel.
+- [Check Reports](https://docs.opslevel.com/docs/check-reports.md): Understand how your checks are being adopted within your organization.
+- [Custom Deploys](https://docs.opslevel.com/docs/deploys.md): Learn how to integrate OpsLevel with your CI/CD pipeline and track every service deployment across environments.
+- [Component Maturity Report](https://docs.opslevel.com/docs/service-maturity-report.md): Understand how your components and teams are performing against your rubric.
+- [Component Detection](https://docs.opslevel.com/docs/service-detection.md): Learn how OpsLevel makes it easy to populate your software catalog.
+- [Tech Docs](https://docs.opslevel.com/docs/tech-docs.md): Make it easier to find key technical documentation from your repositories directly in OpsLevel
+- [Docs Hub](https://docs.opslevel.com/docs/docs-hub.md): All of your key documentation easily accessible from one central place.
+- [AI-Inferred Component Descriptions](https://docs.opslevel.com/docs/ai-inferred-service-descriptions.md)
+- [CSV Export](https://docs.opslevel.com/docs/exporting-data.md): Easily export OpsLevel tables to CSV.
+- [Creating your first Action](https://docs.opslevel.com/docs/creating-your-first-custom-action.md): Actions enable users to complete common, standardized tasks in an easy and consistent way
+- [Action Templates](https://docs.opslevel.com/docs/action-templates.md): Jump start your action library using OpsLevel Action Templates
+- [Configuring Actions Manual Inputs](https://docs.opslevel.com/docs/configuring-custom-actions-manual-inputs.md)
+- [Action Context Schema](https://docs.opslevel.com/docs/custom-actions-context-schema.md): Learn more about configuring Action inputs, including using Liquid and catalog values.null
+- [Actions End-to-end Example](https://docs.opslevel.com/docs/actions-walkthrough.md): A practical, step-by-step walkthrough of implementing a Custom Action in OpsLevel
+- [Configuring and Verifying Webhook Signatures](https://docs.opslevel.com/docs/webhook-signatures.md): Use Webhook Signatures to verify that webhooks are coming from OpsLevel.
+- [Triggering Actions via API](https://docs.opslevel.com/docs/triggering-custom-actions-with-api.md)
+- [Feature Management](https://docs.opslevel.com/docs/feature-management.md): Enable and disable Beta and Advanced features.
+- [UI Customization](https://docs.opslevel.com/docs/ui-customization.md): Change the layout and add custom content for all of the team and services in your organization.
+- [Notifications](https://docs.opslevel.com/docs/notifications.md)
+- [Getting Started with Self Hosted OpsLevel](https://docs.opslevel.com/docs/getting-started-with-self-hosted-opslevel.md): This guide will walk you through how to setup your self hosted OpsLevel application and the prerequisites required to start the application.
+- [AWS + Self Hosted OpsLevel](https://docs.opslevel.com/docs/aws-self-hosted-opslevel.md)
+- [BitBucket Cloud + Self Hosted OpsLevel](https://docs.opslevel.com/docs/bitbucket-cloud-self-hosted-opslevel.md)
+- [Custom Integration](https://docs.opslevel.com/docs/custom-integration.md): Bring your own data into OpsLevel, including Alert Sources and Code Issues.
+- [Creating a Custom Integration](https://docs.opslevel.com/docs/create-a-custom-integration-via-api.md): Create a custom integration to write Code Issues or Alert Sources to using OpsLevel's API or UI.
+- [Creating and Updating Code Issues](https://docs.opslevel.com/docs/create-code-issues-via-api.md): Use OpsLevel's API to create Code Issues for any code quality or code scanning tool.
+- [Creating and Updating Alert Sources](https://docs.opslevel.com/docs/manage-alert-sources-via-api.md): Use OpsLevel's API to create and update Alert Sources for any alerting tool.
+- [Mapping Integration Data to Custom Properties](https://docs.opslevel.com/docs/mapping-integration-data-to-custom-properties.md): Integrate tools by sending arbitrary JSON payloads to OpsLevel. Use JQ to quickly and flexibly interpret data in your organization's preferred format.
+- [Setting Up a Pull Configuration for Your Customizable Data Mapping](https://docs.opslevel.com/docs/setting-up-a-pull-configuration-for-your-customizable-data-mapping.md): This document walks through a sample extraction definition, with the intent of highlighting some of the additional available features.
+- [Automating Component Creation for Your Customizable Data Mapping](https://docs.opslevel.com/docs/automating-component-creation-for-your-customizable-data-mapping.md): Understand how OpsLevel simplifies component management through automation
+- [Aqua Security Integration](https://docs.opslevel.com/docs/aqua-security.md): Integrate with Aqua Security to check for vulnerabilities for your services in OpsLevel.
+- [ArgoCD Integration](https://docs.opslevel.com/docs/argocd.md): Integrate with ArgoCD to track deploys
+- [CircleCI Integration](https://docs.opslevel.com/docs/circleci.md): Integrate with CircleCI to track deploys
+- [Datadog](https://docs.opslevel.com/docs/datadog.md): Connect Datadog monitors to OpsLevel and see their current statuses in your context-rich service catalog.
+- [Bitbucket Integration](https://docs.opslevel.com/docs/bitbucket-integration.md): Integrate with BitBucket to perform checks against your repositories and build your catalog through config-as-code or service detection
+- [GitHub Integration](https://docs.opslevel.com/docs/github-integration.md): Integrate with GitHub to perform checks against your repositories and define services through config-as-code with opslevel.yml, and view API Docs.
+- [GitLab Integration](https://docs.opslevel.com/docs/gitlab-self-managed.md): Integrate with GitLab to perform checks against your repositories, define services through config-as-code with opslevel.yml, and view API Docs.
+- [GitHub Actions Integration](https://docs.opslevel.com/docs/github-actions-integration.md): Integration with GitHub Actions to notify OpsLevel of any recent deploys for a service.
+- [Jira Software](https://docs.opslevel.com/docs/jira-software.md): Create Jira issues from OpsLevel Checks, import context into the issues, and link to the Jira issues directly from your maturity report.
+- [Kubernetes Integration](https://docs.opslevel.com/docs/kubernetes-integration.md): Our Kubernetes integration lets you import and automatically reconcile Kubernetes resources in your cluster to OpsLevel services.
+- [Microsoft Teams Integration](https://docs.opslevel.com/docs/microsoft-teams.md): Send campaign and level change notifications to your teams in Microsoft Teams
+- [New Relic](https://docs.opslevel.com/docs/new-relic-integration.md): Connect New Relic alert conditions to OpsLevel and see their current statuses in your context-rich service catalog.
+- [Octopus Deploy Integration](https://docs.opslevel.com/docs/octopus-deploy-integration.md): Integrate with Octopus Deploy to notify OpsLevel of any recent deploys for a service.
+- [Opsgenie](https://docs.opslevel.com/docs/opsgenie.md): Connect Opsgenie services to OpsLevel and see their current incident statuses in your context-rich service catalog.
+- [OpsLevel Agent](https://docs.opslevel.com/docs/opslevel-agent.md)
+- [PagerDuty](https://docs.opslevel.com/docs/pagerduty.md): Connect PagerDuty services to OpsLevel and see their current statuses in your context-rich service catalog.
+- [incident.io](https://docs.opslevel.com/docs/incident-io.md): Connect incident.io services to OpsLevel and see their current statuses in your context-rich service catalog.
+- [FireHydrant](https://docs.opslevel.com/docs/fire-hydrant.md): Connect FireHydrant services to OpsLevel and see their current statuses in your context-rich service catalog.
+- [Prisma Cloud Integration](https://docs.opslevel.com/docs/prisma-cloud.md): Add Prisma Cloud Alert checks to your Service Maturity rubric.
+- [Slack](https://docs.opslevel.com/docs/slack-integration.md): A two way integration–pull service info directly into Slack using a slash command and ensure OpsLevel has accurate team membership and Slack channel info
+- [Snyk Integration](https://docs.opslevel.com/docs/snyk-integration.md): Integrate with Snyk to check for vulnerabilities for your services in OpsLevel.
+- [SonarQube Integration](https://docs.opslevel.com/docs/sonarqube-integration.md): Integrate with SonarQube to check for vulnerabilities for your services in OpsLevel.
+- [SonarQube Cloud Integration](https://docs.opslevel.com/docs/sonarqube-cloud-integration.md): Integrate with SonarQube Cloud to check for vulnerabilities for your services in OpsLevel.

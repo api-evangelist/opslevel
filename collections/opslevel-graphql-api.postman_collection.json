@@ -1,0 +1,191 @@
+{
+  "item": [
+    {
+      "id": "caad8b20-a086-470e-b6e0-d0910d244b19",
+      "name": "GraphQL",
+      "description": {
+        "content": "OpsLevel GraphQL endpoint.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3b9279c2-055a-4478-8067-50f2774904d0",
+          "name": "Execute a GraphQL query or mutation",
+          "request": {
+            "name": "Execute a GraphQL query or mutation",
+            "description": {
+              "content": "Single endpoint that accepts any OpsLevel GraphQL query or mutation.\nExamples: list services, list teams, run checks, update service\nproperties.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "graphql"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"variables\": {\n    \"key_0\": false\n  },\n  \"operationName\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "4b186973-e4f8-440a-a251-272172bc7b54",
+              "name": "GraphQL response payload (may contain errors alongside data).",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "graphql"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"query Services {\\n  account {\\n    services {\\n      nodes { id name owner { name } }\\n      pageInfo { endCursor hasNextPage }\\n    }\\n  }\\n}\\n\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"key_0\": 3668.3610572467096\n  },\n  \"errors\": [\n    {\n      \"message\": \"string\",\n      \"path\": [\n        \"string\",\n        \"string\"\n      ],\n      \"extensions\": {\n        \"key_0\": 1682.0170911178411,\n        \"key_1\": 917.7914990849412\n      }\n    },\n    {\n      \"message\": \"string\",\n      \"path\": [\n        \"string\",\n        \"string\"\n      ],\n      \"extensions\": {\n        \"key_0\": 3732.3548559336596,\n        \"key_1\": 4247,\n        \"key_2\": 2538.6413712247204\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8d76d4a0-d96a-4fba-98be-a5e1a5b5c78e",
+              "name": "Missing or invalid bearer token.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "graphql"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"query Services {\\n  account {\\n    services {\\n      nodes { id name owner { name } }\\n      pageInfo { endCursor hasNextPage }\\n    }\\n  }\\n}\\n\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"key_0\": 3668.3610572467096\n  },\n  \"errors\": [\n    {\n      \"message\": \"string\",\n      \"path\": [\n        \"string\",\n        \"string\"\n      ],\n      \"extensions\": {\n        \"key_0\": 1682.0170911178411,\n        \"key_1\": 917.7914990849412\n      }\n    },\n    {\n      \"message\": \"string\",\n      \"path\": [\n        \"string\",\n        \"string\"\n      ],\n      \"extensions\": {\n        \"key_0\": 3732.3548559336596,\n        \"key_1\": 4247,\n        \"key_2\": 2538.6413712247204\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.opslevel.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "532b6677-e9bc-4335-9f86-267a93249aa7",
+    "name": "OpsLevel GraphQL API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "OpsLevel is a prescriptive internal developer portal for cataloging,\nmeasuring, and scaffolding services. OpsLevel exposes a single GraphQL\nendpoint at `/graphql` that accepts POST requests carrying a GraphQL\nquery or mutation. Authentication uses a Bearer API token in the\n`Authorization` header.\n\n\nContact Support:\n Name: OpsLevel",
+      "type": "text/plain"
+    }
+  }
+}
