@@ -83,6 +83,8 @@ apis:
   - type: OpenAPI
     url: openapi/opslevel-graphql-api-openapi.yml
 common:
+- type: Website
+  url: https://www.opslevel.com/
 - type: AgenticAccess
   url: agentic-access/opslevel-agentic-access.yml
 - type: VulnerabilityDisclosure
