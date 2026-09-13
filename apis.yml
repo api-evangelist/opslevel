@@ -36,6 +36,7 @@ access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/opslevel.png
 tags:
 - Developer Portal
+- Developer Tools
 - DevOps
 - Experience
 - Internal Developer Portal
