@@ -73,16 +73,16 @@ apis:
     url: https://docs.opslevel.com/docs/getting-started-with-service-creation
   - url: graphql/opslevel-graphql.md
     type: GraphQL
-- aid: opslevel:opslevel-graphql-api
-  name: OpsLevel GraphQL API
+- aid: opslevel:opslevel-graph-ql-api
+  name: OpsLevel Graph QL API
   description: OpsLevel GraphQL endpoint.
   humanURL: https://docs.opslevel.com/docs/graphql
   baseURL: https://api.opslevel.com
   tags:
-  - GraphQL
+  - Graph QL
   properties:
   - type: OpenAPI
-    url: openapi/opslevel-graphql-api-openapi.yml
+    url: openapi/opslevel-graph-ql-api-openapi.yml
 common:
 - type: Website
   url: https://www.opslevel.com/
