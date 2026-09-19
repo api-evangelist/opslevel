@@ -79,6 +79,8 @@ apis:
   humanURL: https://docs.opslevel.com/docs/graphql
   baseURL: https://api.opslevel.com
   tags:
+  - GraphQL
+  tags_raw:
   - Graph QL
   properties:
   - type: OpenAPI
