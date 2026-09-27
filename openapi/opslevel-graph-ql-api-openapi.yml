@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: OpsLevel Graph QL API
+  title: OpsLevel GraphQL API
   description: 'OpsLevel is a prescriptive internal developer portal for cataloging,
 
     measuring, and scaffolding services. OpsLevel exposes a single GraphQL
@@ -64,6 +64,17 @@ paths:
                 $ref: '#/components/schemas/GraphQLResponse'
 components:
   schemas:
+    GraphQLResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          additionalProperties: true
+          nullable: true
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/GraphQLError'
     GraphQLError:
       type: object
       properties:
@@ -93,17 +104,6 @@ components:
         operationName:
           type: string
           description: Operation name when the document contains multiple operations.
-    GraphQLResponse:
-      type: object
-      properties:
-        data:
-          type: object
-          additionalProperties: true
-          nullable: true
-        errors:
-          type: array
-          items:
-            $ref: '#/components/schemas/GraphQLError'
   securitySchemes:
     bearerAuth:
       type: http
