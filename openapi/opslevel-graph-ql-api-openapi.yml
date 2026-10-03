@@ -64,6 +64,21 @@ paths:
                 $ref: '#/components/schemas/GraphQLResponse'
 components:
   schemas:
+    GraphQLRequest:
+      type: object
+      required:
+      - query
+      properties:
+        query:
+          type: string
+          description: GraphQL query or mutation document.
+        variables:
+          type: object
+          description: Variables for the GraphQL document.
+          additionalProperties: true
+        operationName:
+          type: string
+          description: Operation name when the document contains multiple operations.
     GraphQLResponse:
       type: object
       properties:
@@ -89,21 +104,6 @@ components:
         extensions:
           type: object
           additionalProperties: true
-    GraphQLRequest:
-      type: object
-      required:
-      - query
-      properties:
-        query:
-          type: string
-          description: GraphQL query or mutation document.
-        variables:
-          type: object
-          description: Variables for the GraphQL document.
-          additionalProperties: true
-        operationName:
-          type: string
-          description: Operation name when the document contains multiple operations.
   securitySchemes:
     bearerAuth:
       type: http
