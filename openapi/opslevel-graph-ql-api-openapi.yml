@@ -64,6 +64,20 @@ paths:
                 $ref: '#/components/schemas/GraphQLResponse'
 components:
   schemas:
+    GraphQLError:
+      type: object
+      properties:
+        message:
+          type: string
+        path:
+          type: array
+          items:
+            oneOf:
+            - type: string
+            - type: integer
+        extensions:
+          type: object
+          additionalProperties: true
     GraphQLRequest:
       type: object
       required:
@@ -90,20 +104,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/GraphQLError'
-    GraphQLError:
-      type: object
-      properties:
-        message:
-          type: string
-        path:
-          type: array
-          items:
-            oneOf:
-            - type: string
-            - type: integer
-        extensions:
-          type: object
-          additionalProperties: true
   securitySchemes:
     bearerAuth:
       type: http
