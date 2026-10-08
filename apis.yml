@@ -84,6 +84,12 @@ apis:
   - type: OpenAPI
     url: openapi/opslevel-graph-ql-api-openapi.yml
 common:
+- type: Plans
+  url: plans/opslevel-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/opslevel-rate-limits.yml
+- type: FinOps
+  url: finops/opslevel-finops.yml
 - type: Website
   url: https://www.opslevel.com/
 - type: AgenticAccess
