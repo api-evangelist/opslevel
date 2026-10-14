@@ -15,3 +15,29 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: opslevel-new-relic-own
+  label: New Relic (own)
+  partner: new-relic
+  partner_name: New Relic (own)
+  category: Community
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://newrelic.com/instant-observability/opslevel
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: opslevel-okta-own
+  label: Okta (own)
+  partner: okta
+  partner_name: Okta (own)
+  category: Single Sign-On
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.okta.com/integrations/opslevel/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
