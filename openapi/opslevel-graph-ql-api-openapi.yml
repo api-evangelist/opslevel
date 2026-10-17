@@ -64,20 +64,17 @@ paths:
                 $ref: '#/components/schemas/GraphQLResponse'
 components:
   schemas:
-    GraphQLError:
+    GraphQLResponse:
       type: object
       properties:
-        message:
-          type: string
-        path:
-          type: array
-          items:
-            oneOf:
-            - type: string
-            - type: integer
-        extensions:
+        data:
           type: object
           additionalProperties: true
+          nullable: true
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/GraphQLError'
     GraphQLRequest:
       type: object
       required:
@@ -93,17 +90,20 @@ components:
         operationName:
           type: string
           description: Operation name when the document contains multiple operations.
-    GraphQLResponse:
+    GraphQLError:
       type: object
       properties:
-        data:
-          type: object
-          additionalProperties: true
-          nullable: true
-        errors:
+        message:
+          type: string
+        path:
           type: array
           items:
-            $ref: '#/components/schemas/GraphQLError'
+            oneOf:
+            - type: string
+            - type: integer
+        extensions:
+          type: object
+          additionalProperties: true
   securitySchemes:
     bearerAuth:
       type: http
