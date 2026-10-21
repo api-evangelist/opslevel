@@ -15,6 +15,25 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: opslevel-mcp-registry
+  label: MCP Registry
+  partner: mcp
+  partner_name: MCP Registry
+  type: register
+  channel: standard-directory
+  evidence: https://registry.modelcontextprotocol.io/v0/servers?search=com.opslevel
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: registry.modelcontextprotocol.io
+    spec_file: null
+    role: mcp-server-listing
+    registered_name: com.opslevel/mcp
+    register_id: com.opslevel/mcp
+    detected_by: sweep-agent-tools.py
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
 - slug: opslevel-new-relic-own
   label: New Relic (own)
   partner: new-relic
@@ -41,25 +60,6 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: opslevel-mcp-registry
-  label: MCP Registry
-  partner: mcp
-  partner_name: MCP Registry
-  type: register
-  channel: standard-directory
-  evidence: https://registry.modelcontextprotocol.io/v0/servers?search=com.opslevel
-  source: edge
-  relationship: standard-participant
-  contract_reference:
-    register: registry.modelcontextprotocol.io
-    spec_file: null
-    role: mcp-server-listing
-    registered_name: com.opslevel/mcp
-    register_id: com.opslevel/mcp
-    detected_by: sweep-agent-tools.py
-    detected: '2026-10-15'
-  status: not-a-workflow
-  arazzo: null
 - slug: opslevel-microsoft-teams-own
   label: Microsoft Teams (own)
   partner: microsoft-teams
@@ -82,6 +82,32 @@
   marketplace: own
   channel: partner-built
   evidence: https://slack.com/marketplace/AK5SWFH5L-opslevel
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: opslevel-opentofu-opentofu-registry
+  label: OpenTofu (opentofu-registry)
+  partner: opentofu
+  partner_name: OpenTofu (opentofu-registry)
+  category: infrastructure-as-code provider registry listing
+  type: marketplace
+  marketplace: opentofu-registry
+  channel: partner-built
+  evidence: https://search.opentofu.org/provider/opslevel/opslevel
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: opslevel-terraform-terraform-registry
+  label: Terraform (terraform-registry)
+  partner: terraform
+  partner_name: Terraform (terraform-registry)
+  category: infrastructure-as-code provider registry listing
+  type: marketplace
+  marketplace: terraform-registry
+  channel: partner-built
+  evidence: https://registry.terraform.io/providers/OpsLevel/opslevel
   source: edge
   relationship: platform-app
   status: not-a-workflow
