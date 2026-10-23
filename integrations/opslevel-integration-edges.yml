@@ -13,6 +13,9 @@ checked:
 - https://www.raycast.com/api/v1/store_listings
 - backstage/integrations/backstage-integration-edges.yml
 - artifact-hub/integrations/artifact-hub-integration-edges.yml
+- https://landscape.cd.foundation/data/full.json
+- https://plugins.jenkins.io/api/plugin/
+- https://plugins.jenkins.io/api/plugins
 marketplace_apps: []
 edges:
 - partner_name: GitHub Marketplace (actions)
@@ -264,5 +267,24 @@ edges:
   category: Artifact Hub listing (Helm chart)
   badges:
   - 'Verified publisher (Artifact Hub verified publisher: repository ownership proven)'
+- partner_name: Jenkins (own)
+  partner: jenkins
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://plugins.jenkins.io/opslevel/
+  mirror_of: jenkins/integrations/jenkins-integration-edges.yml
+  apps:
+  - OpsLevel (opslevel)
+  listing_count: 1
+  category: Jenkins plugin
+  signal_note: 'publisher side of the all/jenkins listing; vendor-control: opslevel: maintainer account ''opslevel''
+    is the GitHub organization on all/opslevel''s apis.yml'
+  detected: '2026-10-22'
+  detected_by: sweep-jenkins-cd-foundation-plugins.py
 source:
 - https://github.com/marketplace?type=actions
