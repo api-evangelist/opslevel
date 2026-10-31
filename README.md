@@ -1,4 +1,4 @@
-# OpsLevel (opslevel)
+# OpsLevel
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,77 +66,138 @@
 
 OpsLevel is a prescriptive internal developer portal for cataloging, measuring, and scaffolding services according to engineering best practices.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/opslevel/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/opslevel/refs/heads/main/apis.yml)
+**Areas:** Developer Portal · Developer Tools · DevOps · Experience · Internal Developer Portal · Microservices · Platform Engineering · Service Catalog · Service Maturity
 
-## Scope
+## OpsLevel on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for OpsLevel is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/opslevel/](https://apis.io/providers/opslevel/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Developer Portal
-- DevOps
-- Experience
-- Internal Developer Portal
-- Microservices
-- Platform Engineering
-- Service Catalog
-- Service Maturity
+- [OpsLevel GraphQL API](https://apis.io/apis/opslevel/graphql-api/) — The OpsLevel GraphQL API allows you to integrate OpsLevel with your other operational tools, enrich internal tickets, incidents, and other systems with…
+- [OpsLevel Graph QL API](https://apis.io/apis/opslevel/opslevel-graph-ql-api/) — OpsLevel GraphQL endpoint.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-03
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### GraphQL (1)
 
-### OpsLevel GraphQL API
+GraphQL schemas.
 
-The OpsLevel GraphQL API allows you to integrate OpsLevel with your other operational tools, enrich internal tickets, incidents, and other systems with service and team data pulled from OpsLevel. The API supports queries for data retrieval and mutations for data modification, with cursor-based pagination, bearer token authentication, and a rich data model covering services, teams, users, deployments, and infrastructure.
+- [OpsLevel GraphQL API](https://apis.io/graphqls/opslevel/opslevel-graphql/)
 
-- **Human URL:** [https://docs.opslevel.com/docs/graphql](https://docs.opslevel.com/docs/graphql)
-- **Base URL:** `https://api.opslevel.com`
+#### MCP servers (2)
 
-#### Tags
+Model Context Protocol servers that expose the API to agents.
 
-- Developer Portal
-- GraphQL
-- Platform Engineering
-- Service Catalog
+- [MCP Server](https://apis.io/servers/opslevel/mcp-server/)
+- [opslevel](https://apis.io/servers/opslevel/opslevel/)
 
-#### Properties
+#### Agentic access (1)
 
-- [Documentation](https://docs.opslevel.com/docs/graphql)
-- [Authentication](https://docs.opslevel.com/docs/graphql)
-- [Getting Started](https://docs.opslevel.com/docs/getting-started-with-service-creation)
-- [Postman Collection](collections/opslevel.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/opslevel.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Which operations an agent can call, which act, and which need a human in the loop.
 
-## Common Properties
+- [Opslevel Agentic Access](https://apis.io/agentic-access/opslevel/opslevel-agentic-access/)
 
-- [Portal](https://www.opslevel.com/)
-- [Developer  Documentation](https://docs.opslevel.com/)
-- [Blog](https://www.opslevel.com/resource/blog)
-- [Sign Up](https://www.opslevel.com/request-a-demo)
-- [Login](https://app.opslevel.com/users/sign_in)
+#### Collections (2)
+
+Postman and Open Collection request collections.
+
+- [OpsLevel GraphQL API](https://apis.io/collections/opslevel/open-opslevel/)
+- [OpsLevel GraphQL API](https://apis.io/collections/opslevel/open-opslevel-graphql-api/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Opslevel Authentication](https://apis.io/security/opslevel/opslevel-authentication/)
+- [Opslevel Domain Security](https://apis.io/security/opslevel/opslevel-domain-security/)
+- [Opslevel Vulnerability Disclosure](https://apis.io/security/opslevel/opslevel-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Opslevel Plans Pricing](https://apis.io/plans/opslevel/opslevel-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Opslevel Rate Limits](https://apis.io/rate-limits/opslevel/opslevel-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Opslevel Finops](https://apis.io/finops/opslevel/opslevel-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.opslevel.com/)
+- [Documentation](https://docs.opslevel.com/)
 - [Pricing](https://www.opslevel.com/pricing)
-- [About](https://www.opslevel.com/about)
-- [Status Page](https://opslevelstatus.com/)
-- [Terms of Service](https://www.opslevel.com/legal/t4-terms-of-service)
-- [Privacy Policy](https://www.opslevel.com/legal/privacy)
+- [Blog](https://www.opslevel.com/resource/blog)
 - [Security](https://www.opslevel.com/legal/security)
-- [Contact](https://www.opslevel.com/contact)
-- [GitHub Organization](https://github.com/OpsLevel)
-- [LinkedIn](https://www.linkedin.com/company/opslevel)
-- [Terraform  Provider](https://registry.terraform.io/providers/OpsLevel/opslevel/latest/docs)
-- [Integrations](https://www.opslevel.com/integrations-overview)
-- [Customers](https://www.opslevel.com/customers)
-- [M C P Server](https://github.com/OpsLevel/opslevel-mcp)
-- [L L Ms Txt](https://docs.opslevel.com/llms.txt)
+- [Terms of service](https://www.opslevel.com/legal/t4-terms-of-service)
+- [Privacy policy](https://www.opslevel.com/legal/privacy)
+- [GitHub](https://github.com/OpsLevel)
+- [Status](https://opslevelstatus.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 40.7** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 53.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 46.1 |
+
+**Agent readiness 35.2** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/opslevel/](https://apis.io/providers/opslevel/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OpsLevel: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/opslevel/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
